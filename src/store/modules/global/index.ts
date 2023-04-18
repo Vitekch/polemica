@@ -15,7 +15,6 @@ const defaultState: IGlobalState = {
 const initialState: IGlobalState = savedState
   ? JSON.parse(savedState)
   : defaultState;
-console.log(initialState);
 const globalSlice = createSlice({
   name: 'global',
   initialState,
@@ -23,7 +22,6 @@ const globalSlice = createSlice({
     switchTheme: (state) => {
       state.darkTheme = !state.darkTheme;
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(state));
-      console.log(state);
     },
   },
 });
