@@ -1,0 +1,36 @@
+.switcher {
+  &__container {
+    height: 20px;
+    width: 40px;
+    padding: 2px 4px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+  }
+
+  &__thumb {
+    height: 16px;
+    min-width: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: var(--primary-color);
+    animation-direction: reverse;
+
+    transition: all .15s;
+    &.active {
+      transform: translateX(24px);
+    }
+    &__pivot {
+      height: 0px;
+      width: 0px;
+    }
+  }
+}
