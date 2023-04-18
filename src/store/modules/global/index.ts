@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import type { RootState } from '../../index';
 
 const LOCAL_STORAGE_KEY = 'app-config';
@@ -15,7 +15,6 @@ const defaultState: IGlobalState = {
 const initialState: IGlobalState = savedState
   ? JSON.parse(savedState)
   : defaultState;
-console.log(initialState);
 const globalSlice = createSlice({
   name: 'global',
   initialState,
@@ -23,7 +22,6 @@ const globalSlice = createSlice({
     switchTheme: (state) => {
       state.darkTheme = !state.darkTheme;
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(state));
-      console.log(state);
     },
   },
 });
