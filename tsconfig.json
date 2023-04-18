@@ -8,7 +8,7 @@
     ],
     "paths": {
       "@/*": ["/*"],
-      "@modules/*": ["modules/*"],
+      "@modules/*": ["/modules/*"],
     },
     "allowJs": true,
     "skipLibCheck": true,
