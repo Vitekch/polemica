@@ -1,0 +1,25 @@
+.auth-form {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__title {
+    font-size: 32px;
+    font-weight: 300;
+  }
+  &__actions {
+    margin-top: 44px;
+    & > a {
+      display: block;
+      margin-top: 12px;
+      font-size: 14px;
+
+      cursor: pointer;
+      transition: all .2s;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}

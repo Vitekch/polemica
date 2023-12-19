@@ -12,6 +12,7 @@ body {
   --border-color: #00000020;
   --primary-color: #259b8d;
   --accent-color: #d1c890;
+  --input-bg-color: #efefef;
 
   &.dark {
     --background-color: #292929;
@@ -19,8 +20,9 @@ body {
     --main-text-color: #e6e6e6;
     --secondary-text-color: #b0b0b0;
     --border-color: #ffffff20;
-    --primary-color: #34bbab;
+    --primary-color: #259b8d;
     --accent-color: #d1c890;
+    --input-bg-color: #2f2f2f;
   }
   font-family: 'Montserrat', sans-serif;
   background-color: var(--background-color);
@@ -29,15 +31,11 @@ body {
   transition: all .2s;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 1240px;
-}
-
-.card {
-  padding: 16px;
-  border: var(--border-color);
-  background-color: var(--block-color);
+.app {
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1240px;
+  }
 }

@@ -5,15 +5,15 @@
   height: 80px;
   padding: 16px;
 
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
   box-sizing: border-box;
 
   background-color: var(--block-color);
   border-bottom: 1px solid var(--border-color);
-
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
   &__logo {
     font-size: 32px;
     font-weight: 200;

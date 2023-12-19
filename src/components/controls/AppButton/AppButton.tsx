@@ -4,18 +4,20 @@ import { classesNames, ClassesObj } from '../../../helpers/formatClasses';
 
 import styles from './styles.module.scss';
 
-type Props = {
+interface IProps {
   children: React.ReactNode;
   onClick?: () => void;
   icon?: string;
   outlined?: boolean;
+  block?: boolean;
 }
 
-const ActionButton: React.FunctionComponent<Props> = (props: Props) => {
+const AppButton: React.FunctionComponent<IProps> = (props: IProps) => {
 
   const btnClasses: ClassesObj = {
     [styles['action-button']]: true,
     [styles.outlined]: !!props.outlined,
+    [styles.block]: !!props.block,
   };
 
   return (
@@ -28,4 +30,4 @@ const ActionButton: React.FunctionComponent<Props> = (props: Props) => {
   )
 }
 
-export default ActionButton;
+export default AppButton;

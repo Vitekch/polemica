@@ -20,4 +20,7 @@
     border-color: var(--primary-color) !important;
     color: var(--primary-color) !important;
   }
+  &.block {
+    width: 100% !important;
+  }
 }

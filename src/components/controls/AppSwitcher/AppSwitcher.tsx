@@ -11,7 +11,7 @@ interface Props {
   icon?: string,
 }
 
-const SwitcherControl: React.FunctionComponent<Props> = (props: Props) => {
+const AppSwitcher: React.FunctionComponent<Props> = (props: Props) => {
 
   const thumbClasses: ClassesObj = {
     [styles.switcher__thumb]: true,
@@ -34,4 +34,4 @@ const SwitcherControl: React.FunctionComponent<Props> = (props: Props) => {
   );
 };
 
-export default SwitcherControl;
+export default AppSwitcher;

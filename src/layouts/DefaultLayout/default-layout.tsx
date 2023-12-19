@@ -1,15 +1,19 @@
 import React from 'react';
 import TheHeader from '../../components/layout/TheHeader/TheHeader';
 
-type Props = {
+interface IProps {
   children: JSX.Element,
-};
+}
 
-const DefaultLayout:React.FunctionComponent<Props> = (props: Props) => {
+const DefaultLayout:React.FunctionComponent<IProps> = (props: IProps) => {
   return (
     <>
       <TheHeader/>
-      <main>{ props.children }</main>
+      <main>
+        <div className="app__container">
+          { props.children }
+        </div>
+      </main>
     </>
   );
 };
