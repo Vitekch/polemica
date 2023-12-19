@@ -1,0 +1,65 @@
+.app-input {
+  &__container {
+    display: flex;
+    gap: 8px;
+  }
+  &__field {
+    height: 40px;
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+
+    background-color: var(--input-bg-color);
+    color: var(--main-text-color);
+    font-size: 16px;
+    letter-spacing: 2px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    outline: none;
+
+    transition: all .2s;
+    &:focus {
+      border-color: var(--primary-color);
+      outline: none;
+    }
+  }
+
+  &__label {
+    margin-bottom: 4px;
+    color: var(--main-text-color);
+    font-size: 12px;
+  }
+
+  &__append-action {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+
+    color: var(--main-text-color);
+
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+      &::before {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        content: "";
+        background: var(--primary-color);
+        opacity: .1;
+      }
+
+      color: var(--primary-color);
+    }
+  }
+}
